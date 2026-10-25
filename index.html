@@ -666,8 +666,8 @@ img{max-width:100%}
   var total = quadros.length, atual = 1, aberto = false, querTocar = false, desligadoPeloUsuario = false;
 
   /* musicas: coloque os arquivos em audio/ e liste aqui; tocam em sequencia e em ciclo */
-  var faixas = [], faixa = 0;
-  if (faixas.length){ audio.src = faixas[0]; btnSom.hidden = false; }
+  var faixas = ['audio/sem-filtro.mp3'], faixa = 0;
+  if (faixas.length){ audio.src = faixas[0]; audio.loop = faixas.length === 1; btnSom.hidden = false; }
 
   var contatos = { baroni: { n: '5521967991111', nome: 'Baroni' }, neto: { n: '5512996379798', nome: 'Neto' } };
   [].forEach.call(document.querySelectorAll('[data-zap]'), function(a){
