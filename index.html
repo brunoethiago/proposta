@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bruno &amp; Thiago · Sem Filtro · Proposta de Patrocínio</title>
+<meta name="description" content="Proposta de patrocínio do lançamento do DVD Sem Filtro, de Bruno &amp; Thiago · sábado, 5 de dezembro, 21h · Autentic Lounge, São Lourenço (MG).">
+<meta name="theme-color" content="#0b0907">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bruno &amp; Thiago · Sem Filtro · Proposta de Patrocínio">
+<meta property="og:description" content="Lançamento do DVD · 5 de dezembro · 21h · Autentic Lounge, São Lourenço (MG). Toque para abrir a proposta.">
+<meta property="og:image" content="https://brunoethiago.github.io/proposta/slides/s01.jpg">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:url" content="https://brunoethiago.github.io/proposta/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://brunoethiago.github.io/proposta/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0907'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23e2a93b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fundo:#0b0907; --fundo-2:#15100a; --texto:#f4ebdd; --texto-2:#a39a8b; --texto-3:#6a6254;
+  --ouro:#e2a93b; --ouro-2:#f3cf84; --ouro-3:#a8741a; --linha:rgba(244,235,221,.14);
+  --tit:'Bebas Neue',Impact,'Arial Narrow',sans-serif;
+  --cond:'Barlow Condensed','Arial Narrow',Arial,sans-serif;
+  --corpo:'Barlow',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --botao:linear-gradient(135deg,#f6d792,#e2a93b 55%,#b9801f);
+}
+*{box-sizing:border-box;margin:0}
+html{color-scheme:dark;background:var(--fundo);-webkit-text-size-adjust:100%}
+body{background:var(--fundo);color:var(--texto);font-family:var(--corpo);min-height:100dvh;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+body.travado{overflow:hidden;height:100dvh}
+button,a{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--ouro-2);outline-offset:3px}
+
+/* ---------- alternância PC / celular ---------- */
+.so-cel{display:none}
+@media (max-width:860px),(orientation:portrait) and (max-width:1100px){
+  .so-pc,.contador{display:none}
+  .so-cel{display:block}
+}
+
+/* ---------- tela de entrada ---------- */
+.entrada{position:fixed;inset:0;z-index:60;display:flex;align-items:center;overflow:hidden;cursor:pointer;
+  padding:clamp(24px,5vw,88px);padding-bottom:max(clamp(24px,5vw,88px),env(safe-area-inset-bottom));
+  background:
+    radial-gradient(900px 640px at 80% 8%,rgba(226,169,59,.26),transparent 62%),
+    radial-gradient(800px 700px at -5% 105%,rgba(168,116,26,.30),transparent 62%),
+    linear-gradient(180deg,#120e08 0%,#0b0907 60%,#070504 100%);
+  transition:opacity .9s ease,visibility .9s ease,transform .9s ease}
+.entrada.saindo{opacity:0;visibility:hidden;transform:scale(1.03)}
+.feixes{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.feixes::before{content:"";position:absolute;left:62%;top:-24%;width:150%;height:150%;transform-origin:0 0;filter:blur(12px);opacity:.9;
+  background:conic-gradient(from 168deg at 0 0,transparent 0 9%,rgba(243,207,132,.22) 11%,transparent 15%,transparent 22%,rgba(243,207,132,.15) 24%,transparent 28%,transparent 36%,rgba(255,236,190,.12) 38%,transparent 41%,transparent 100%);
+  animation:varrer 11s ease-in-out infinite alternate}
+@keyframes varrer{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+#cena3d{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.dupla-wrap{position:absolute;right:4vw;bottom:0;height:94dvh;max-width:58vw;aspect-ratio:900/1361;pointer-events:none;
+  animation:chega 1.6s cubic-bezier(.2,.7,.2,1) both}
+.dupla-in{position:relative;width:100%;height:100%;transform:translate3d(calc(var(--px,0)*14px),calc(var(--py,0)*8px),0);transition:transform .35s ease-out}
+.dupla-in img{display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;
+  filter:drop-shadow(0 34px 60px rgba(0,0,0,.65)) drop-shadow(0 0 46px rgba(226,169,59,.22));animation:respira 9s ease-in-out infinite alternate}
+.brilho{display:none;position:absolute;inset:0;mix-blend-mode:screen;opacity:.85;
+  -webkit-mask:url(img/dupla.webp) center bottom/contain no-repeat;mask:url(img/dupla.webp) center bottom/contain no-repeat;
+  background:linear-gradient(105deg,transparent 38%,rgba(255,240,200,.55) 50%,transparent 62%) 160% 0/260% 100% no-repeat;animation:brilho 6s ease-in-out infinite}
+.http .brilho{display:block}
+@keyframes respira{from{transform:scale(1)}to{transform:scale(1.025)}}
+@keyframes brilho{0%,35%{background-position:160% 0}75%,100%{background-position:-60% 0}}
+.faiscas{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.faiscas i{position:absolute;bottom:-12px;width:5px;height:5px;border-radius:50%;background:radial-gradient(circle,#fff6dc,rgba(243,207,132,.6) 55%,transparent 70%);opacity:0;animation:sobeFaisca linear infinite}
+@keyframes sobeFaisca{0%{transform:translate3d(0,0,0);opacity:0}12%{opacity:.95}100%{transform:translate3d(var(--dx,20px),-105dvh,0);opacity:0}}
+.entrada::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,#0b0907 0%,rgba(11,9,7,.88) 26%,rgba(11,9,7,0) 56%)}
+.entrada .conteudo{position:relative;z-index:2;max-width:min(760px,92vw);animation:sobe 1.1s .2s cubic-bezier(.2,.7,.2,1) both}
+.sobretitulo{display:flex;align-items:center;gap:14px;font:600 clamp(13px,1.3vw,18px)/1 var(--cond);letter-spacing:.34em;text-transform:uppercase;color:var(--ouro)}
+.sobretitulo::before{content:"";width:46px;height:2px;background:var(--ouro);flex:none}
+.lanc{margin-top:clamp(14px,2vw,26px);font:600 clamp(15px,1.7vw,24px)/1 var(--cond);letter-spacing:.42em;text-transform:uppercase;color:var(--texto)}
+.sf{margin-top:6px;font:400 clamp(84px,11.6vw,196px)/.84 var(--tit);letter-spacing:.005em;white-space:nowrap;text-shadow:0 6px 40px rgba(226,169,59,.18)}
+.sf .a{color:#fbf3e3}
+.sf .b{background:linear-gradient(180deg,#fff0c4 0%,#f3cf84 30%,#e2a93b 62%,#a8741a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.dupla-nome{margin-top:clamp(10px,1.4vw,20px);font:400 clamp(34px,4.4vw,74px)/1 var(--tit);letter-spacing:.06em}
+.dupla-nome em{font-style:normal;color:var(--ouro)}
+.sub{margin-top:clamp(10px,1.4vw,18px);font:500 clamp(15px,1.6vw,22px)/1.4 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--texto-2)}
+.sub b{color:var(--texto);font-weight:600}
+.cta{position:relative;display:inline-flex;align-items:center;gap:14px;margin-top:clamp(26px,3.6vw,48px);padding:20px 34px 20px 26px;border-radius:999px;
+  background:var(--botao);color:#1b1203;font:700 clamp(17px,1.9vw,22px)/1 var(--cond);letter-spacing:.22em;text-transform:uppercase;box-shadow:0 14px 40px rgba(226,169,59,.36)}
+.cta svg{width:26px;height:26px;flex:none}
+.cta::before,.cta::after{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid var(--ouro-2);opacity:0;animation:pulso 2.4s ease-out infinite}
+.cta::after{animation-delay:1.2s}
+.aviso{margin-top:16px;font:400 14px/1.4 var(--corpo);color:var(--texto-2);letter-spacing:.02em}
+@keyframes pulso{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.35,1.9);opacity:0}}
+@keyframes sobe{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes chega{from{opacity:0;transform:translateX(4vw) scale(1.03)}to{opacity:1;transform:none}}
+@keyframes chegaM{from{opacity:0;transform:translateX(-50%) translateY(3vh) scale(1.04)}to{opacity:1;transform:translateX(-50%)}}
+
+/* ---------- elementos fixos ---------- */
+.topo{position:fixed;inset:0 0 auto 0;z-index:30;height:3px;background:rgba(255,255,255,.07)}
+.topo i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--ouro-3),var(--ouro-2));transition:width .25s}
+.contador{position:fixed;top:max(14px,env(safe-area-inset-top));left:14px;z-index:30;padding:7px 12px;border-radius:999px;
+  background:rgba(11,9,7,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--linha);
+  font:600 14px/1 var(--cond);letter-spacing:.16em;color:var(--texto-2)}
+.contador b{color:var(--ouro);font-weight:700}
+.som{position:fixed;right:14px;bottom:max(14px,env(safe-area-inset-bottom));z-index:40;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(21,16,10,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(226,169,59,.55);box-shadow:0 8px 28px rgba(0,0,0,.45)}
+.som[hidden]{display:none}
+.som svg{width:24px;height:24px;color:var(--ouro-2)}
+.som .eq{display:none;gap:3px;align-items:flex-end;height:20px}
+.som .eq i{width:3.5px;border-radius:2px;background:var(--ouro-2);height:100%;transform-origin:bottom;animation:eq 1s ease-in-out infinite}
+.som .eq i:nth-child(2){animation-delay:-.35s}.som .eq i:nth-child(3){animation-delay:-.7s}.som .eq i:nth-child(4){animation-delay:-.15s}
+.som.tocando .eq{display:flex}.som.tocando .ico{display:none}
+@keyframes eq{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
+.whats{position:fixed;left:14px;bottom:max(14px,env(safe-area-inset-bottom));z-index:40;display:inline-flex;align-items:center;gap:9px;padding:14px 20px 14px 16px;border-radius:999px;text-decoration:none;
+  background:var(--botao);color:#1b1203;font:700 15px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;
+  box-shadow:0 10px 30px rgba(226,169,59,.38);transform:translateY(140%);opacity:0;pointer-events:none;transition:transform .5s cubic-bezier(.2,.7,.2,1),opacity .4s}
+.whats.mostra{transform:none;opacity:1;pointer-events:auto}
+.whats svg{width:20px;height:20px}
+
+/* ---------- formato PC: slides ---------- */
+.quadro{display:grid;place-items:center;padding:0}
+.slide{display:block;position:relative;width:min(100vw,calc(100dvh*16/9));aspect-ratio:16/9;background:var(--fundo-2);
+  transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.pre{opacity:0;transform:translateY(18px)}
+.slide img{display:block;width:100%;height:100%;object-fit:cover}
+.so-pc{scroll-snap-type:y proximity}
+.so-pc .quadro{min-height:100dvh;scroll-snap-align:center}
+
+.fecho{padding:clamp(48px,8vw,110px) 22px calc(clamp(70px,9vw,120px) + env(safe-area-inset-bottom));text-align:center;
+  background:radial-gradient(700px 360px at 50% 0,rgba(226,169,59,.16),transparent 70%)}
+.fecho h2{font:400 clamp(44px,7vw,92px)/.95 var(--tit);letter-spacing:.01em}
+.fecho h2 em{font-style:normal;color:var(--ouro)}
+.fecho p{margin:18px auto 0;max-width:520px;color:var(--texto-2);font-size:clamp(15px,1.6vw,18px);line-height:1.5}
+.botoes{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.botoes a{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;text-decoration:none;
+  font:700 clamp(15px,1.6vw,18px)/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;border:1.5px solid rgba(226,169,59,.6);background:rgba(226,169,59,.08)}
+.botoes a.principal{background:var(--botao);color:#1b1203;border-color:transparent;box-shadow:0 12px 34px rgba(226,169,59,.3)}
+.botoes svg{width:20px;height:20px}
+.contatos{list-style:none;padding:0;margin:34px auto 0;display:flex;flex-wrap:wrap;gap:12px 38px;justify-content:center;color:var(--texto-2);font-size:clamp(15px,1.5vw,18px)}
+.contatos b{margin-right:10px;color:var(--texto);font:600 13px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase}
+.contatos a{color:var(--ouro-2);text-underline-offset:3px}
+.rodape{margin-top:46px;font:500 13px/1.6 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:#7a7060}
+
+/* ---------- formato celular: conteúdo em coluna ---------- */
+.m-sec{max-width:680px;margin:0 auto;padding:64px max(20px,env(safe-area-inset-right)) 0 max(20px,env(safe-area-inset-left))}
+.m-eyebrow{display:flex;align-items:center;gap:12px;font:600 13px/1 var(--cond);letter-spacing:.3em;text-transform:uppercase;color:var(--ouro)}
+.m-eyebrow::before{content:"";width:32px;height:2px;background:var(--ouro);flex:none}
+.m-h2{margin-top:14px;font:400 clamp(44px,13vw,64px)/.95 var(--tit);letter-spacing:.01em;text-wrap:balance}
+.m-h2 em{font-style:normal;color:var(--ouro)}
+.m-p{margin-top:16px;color:#ddd3c3;font-size:17px;line-height:1.6}
+.m-p b{color:var(--texto);font-weight:500}
+.m-p a,.m-nota a{color:var(--ouro-2);text-underline-offset:3px}
+.m-nota{margin-top:16px;color:var(--texto-2);font-size:14.5px;line-height:1.5}
+
+.m-hero{position:relative;overflow:hidden;padding-bottom:40px;
+  background:radial-gradient(560px 460px at 85% 4%,rgba(226,169,59,.26),transparent 66%),radial-gradient(600px 520px at -10% 64%,rgba(168,116,26,.3),transparent 66%)}
+.m-hero-foto{width:min(100%,520px);margin:0 auto;height:min(118vw,70dvh);padding-top:max(0px,env(safe-area-inset-top))}
+.m-hero-foto img{display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+.m-hero-txt{position:relative;max-width:680px;margin:-20vw auto 0;padding:0 max(20px,env(safe-area-inset-right)) 0 max(20px,env(safe-area-inset-left))}
+.m-hero .lanc{margin-top:14px;font-size:14px}
+.m-hero .sf{font-size:clamp(76px,24vw,150px)}
+.m-hero .dupla-nome{font-size:clamp(34px,10.5vw,60px)}
+.m-sub{margin-top:12px;color:var(--texto-2);font:500 clamp(15px,4.4vw,19px)/1.3 var(--cond);letter-spacing:.14em;text-transform:uppercase}
+.m-chips{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.m-chips li{padding:10px 14px;border-radius:999px;border:1px solid rgba(226,169,59,.5);background:rgba(226,169,59,.08);font:600 15px/1 var(--cond);letter-spacing:.14em;text-transform:uppercase}
+
+.m-tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
+.m-tile{min-width:0;padding:16px 16px 18px;border-radius:16px;border:1px solid var(--linha);background:linear-gradient(160deg,rgba(244,235,221,.07),rgba(244,235,221,.02))}
+.m-tile small{display:block;font:600 12px/1 var(--cond);letter-spacing:.26em;text-transform:uppercase;color:var(--ouro)}
+.m-tile b{display:block;margin-top:12px;font:400 clamp(38px,11vw,50px)/.95 var(--tit);overflow-wrap:anywhere}
+.m-tile b.mn{font-size:clamp(28px,8.4vw,36px);line-height:1}
+.m-tile span{display:block;margin-top:8px;color:var(--texto-2);font-size:14px}
+
+.m-dupla-nome{margin-top:14px;font:400 clamp(48px,14vw,72px)/.95 var(--tit);letter-spacing:.02em}
+.m-dupla-nome em{font-style:normal;color:var(--ouro)}
+.m-dupla-img{display:block;width:min(100%,420px);max-width:none;height:auto;margin:14px auto -6px;filter:drop-shadow(0 20px 34px rgba(0,0,0,.5))}
+.m-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px;padding-top:22px;border-top:1px solid var(--linha)}
+.m-stats b{display:block;font:400 clamp(32px,9.6vw,46px)/1 var(--tit);white-space:nowrap}
+.m-stats span{display:block;margin-top:8px;color:var(--texto-2);font-size:12.5px;line-height:1.38}
+
+.m-foto{margin:22px 0 0;border-radius:18px;overflow:hidden;border:1px solid var(--linha);background:var(--fundo-2)}
+.m-foto img{display:block;width:100%;height:auto}
+.m-lista{list-style:none;padding:0;margin:22px 0 0;border-top:1px solid var(--linha)}
+.m-lista li{display:grid;grid-template-columns:38px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--linha)}
+.m-lista .n{font:400 30px/1 var(--tit);color:var(--ouro)}
+.m-lista b{display:block;font:400 25px/1.05 var(--tit);letter-spacing:.03em}
+.m-lista span{display:block;margin-top:5px;color:var(--texto-2);font-size:15px;line-height:1.45}
+.m-lista a{color:var(--ouro-2)}
+.m-lista .ptxt{margin:0;color:var(--texto);font-size:17px}
+
+.m-cap{display:flex;align-items:baseline;gap:14px;margin-top:26px}
+.m-cap b{font:400 clamp(72px,22vw,110px)/.85 var(--tit)}
+.m-cap span{font:600 14px/1.25 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--texto-2)}
+.m-tags{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.m-tags li{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid var(--linha);background:rgba(244,235,221,.04);font-size:15px}
+.m-tags li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ouro);flex:none}
+
+.m-fase{margin-top:14px;padding:20px 18px 6px;border-radius:18px;border:1px solid var(--linha);background:linear-gradient(160deg,rgba(244,235,221,.06),rgba(244,235,221,.02))}
+.m-fase:first-of-type{margin-top:24px}
+.m-fase em{display:inline-block;padding:6px 12px;border-radius:999px;border:1px solid rgba(226,169,59,.55);font:600 12px/1 var(--cond);letter-spacing:.24em;text-transform:uppercase;font-style:normal;color:var(--ouro)}
+.m-fase h3{margin-top:12px;font:400 40px/1 var(--tit);letter-spacing:.02em}
+.m-fase ul{list-style:none;padding:0;margin:14px 0 0}
+.m-fase li{position:relative;padding:12px 0 12px 20px;border-top:1px solid var(--linha);font-size:16px;line-height:1.4}
+.m-fase li::before{content:"";position:absolute;left:2px;top:19px;width:6px;height:6px;border-radius:50%;background:var(--ouro)}
+
+.m-plano{position:relative;margin-top:14px;padding:22px 18px 8px;border-radius:20px;border:1px solid var(--linha);background:linear-gradient(160deg,rgba(244,235,221,.06),rgba(244,235,221,.02))}
+.m-plano:first-of-type{margin-top:24px}
+.m-plano.ouro{border-color:rgba(226,169,59,.75);background:linear-gradient(160deg,rgba(226,169,59,.2),rgba(226,169,59,.04) 62%);box-shadow:0 18px 50px rgba(226,169,59,.14)}
+.m-plano header{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.m-plano h3{font:400 clamp(50px,15vw,66px)/.85 var(--tit);letter-spacing:.02em}
+.m-plano.ouro h3{color:var(--ouro-2)}.m-plano.prata h3{color:#d3d6dc}.m-plano.bronze h3{color:#d1915c}
+.m-plano small{display:block;margin-top:8px;font:600 12px/1 var(--cond);letter-spacing:.26em;text-transform:uppercase;color:var(--texto-2)}
+.m-preco{text-align:right}
+.m-preco b{display:block;font:400 clamp(34px,10vw,46px)/1 var(--tit);white-space:nowrap}
+.m-preco span{display:block;margin-top:6px;font:600 11px/1 var(--cond);letter-spacing:.24em;text-transform:uppercase;color:var(--texto-2)}
+.m-plano dl{margin:18px 0 0}
+.m-plano dl div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-top:1px solid var(--linha);font-size:15px;line-height:1.35}
+.m-plano dt{color:var(--texto-2)}
+.m-plano dd{text-align:right;font-weight:500}
+.m-plano dd.nao{color:var(--texto-3);font-weight:400}
+
+.m-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.m-pills span{padding:8px 12px;border-radius:999px;font:600 12px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--linha);color:var(--texto-2)}
+.m-pills span.d{border-color:rgba(226,169,59,.7);background:rgba(226,169,59,.12);color:var(--ouro-2)}
+.m-incl{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px}
+.m-incl div{padding:14px 10px;border-radius:14px;border:1px solid var(--linha);text-align:center;color:var(--texto-3)}
+.m-incl div.sim{border-color:rgba(226,169,59,.7);background:rgba(226,169,59,.1);color:var(--ouro-2)}
+.m-incl b{display:block;font:400 28px/1 var(--tit);letter-spacing:.03em}
+.m-incl span{display:block;margin-top:6px;font:600 11px/1.2 var(--cond);letter-spacing:.16em;text-transform:uppercase}
+
+.m-boreal{margin-top:72px;padding:56px 0 calc(110px + env(safe-area-inset-bottom));
+  background:radial-gradient(520px 380px at 95% 0,rgba(31,200,255,.2),transparent 70%),radial-gradient(520px 420px at -10% 38%,rgba(25,247,178,.13),transparent 70%),radial-gradient(500px 400px at 60% 100%,rgba(138,92,255,.16),transparent 70%),#050b14}
+.m-boreal .m-sec{padding-top:0}
+.m-boreal .m-eyebrow{color:#1fc8ff}.m-boreal .m-eyebrow::before{background:#1fc8ff}
+.m-logo{display:block;width:min(78%,330px);height:auto;margin-bottom:34px}
+.m-boreal .m-h2{font:400 clamp(40px,12vw,58px)/.98 var(--tit)}
+.m-boreal .m-h2 em{color:#19f7b2}
+.m-bshow{display:block;width:calc(100% + 40px);max-width:none;margin:26px -20px 0;height:auto}
+.m-bfotos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.m-bfotos img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12)}
+.m-pilares{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.14)}
+.m-pilares li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.m-pilares b{display:block;font:700 15px/1 var(--cond);letter-spacing:.3em;text-transform:uppercase;color:#19f7b2}
+.m-pilares span{display:block;margin-top:7px;color:#bcc6d8;font-size:15.5px;line-height:1.4}
+.m-contato{margin-top:36px;padding:22px 18px;border-radius:20px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
+.m-contato small{display:block;font:600 12px/1 var(--cond);letter-spacing:.26em;text-transform:uppercase;color:#1fc8ff}
+.m-contato h3{margin-top:10px;font:400 44px/1 var(--tit);letter-spacing:.02em}
+.m-cp{margin-top:14px;color:#cfd8e6;font-size:16.5px;line-height:1.55}
+.m-pessoas{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.m-pessoa{min-width:0;padding:16px 14px;border-radius:16px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
+.m-pessoa b{display:block;font:400 34px/1 var(--tit);letter-spacing:.03em}
+.m-pessoa span{display:block;margin-top:8px;color:#bcc6d8;font-size:15px;white-space:nowrap}
+.m-pessoa .m-btn{margin-top:14px;padding:14px 8px;font-size:15px;letter-spacing:.1em;gap:8px}
+.m-pessoa .m-btn svg{width:18px;height:18px}
+.m-ig{margin-top:10px}
+.m-btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:17px 20px;border-radius:999px;text-decoration:none;font:700 17px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;border:1.5px solid rgba(31,200,255,.6);background:rgba(31,200,255,.08)}
+.m-btn svg{width:20px;height:20px;flex:none}
+.m-btn.prim{background:linear-gradient(135deg,#19f7b2,#1fc8ff 55%,#8a5cff);color:#04120d;border-color:transparent;box-shadow:0 12px 34px rgba(31,200,255,.25)}
+.m-dados{list-style:none;padding:0;margin:20px 0 0;border-top:1px solid rgba(255,255,255,.14)}
+.m-dados li{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14);min-width:0}
+.m-dados span{flex:1 1 auto;font:600 12px/1 var(--cond);letter-spacing:.22em;text-transform:uppercase;color:#8fa3bd}
+.m-dados b{flex:1 0 100%;min-width:0;font:500 16px/1.3 var(--corpo);overflow-wrap:anywhere}
+.m-dados button{flex:none;padding:8px 14px;border-radius:999px;border:1.5px solid rgba(31,200,255,.6);font:700 12px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;color:#1fc8ff}
+.m-fim{margin-top:40px;text-align:center;font:500 12px/1.7 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:#7a7060}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .pre{opacity:1;transform:none}
+}
+@media (orientation:portrait),(max-width:760px){
+  .entrada{align-items:flex-end}
+  .dupla-wrap{right:auto;left:50%;top:max(1dvh,env(safe-area-inset-top));bottom:auto;height:60dvh;max-width:92vw;transform:translateX(-50%);animation:chegaM 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .entrada::after{background:linear-gradient(0deg,#0b0907 0%,rgba(11,9,7,.92) 36%,rgba(11,9,7,0) 66%)}
+  .entrada .conteudo{padding-bottom:max(4px,env(safe-area-inset-bottom))}
+  .sf{font-size:clamp(70px,22.5vw,150px)}
+  .dupla-nome{font-size:clamp(30px,9.4vw,56px)}
+  .cta{width:100%;justify-content:center}
+  .feixes::before{left:20%}
+}
+</style>
+</head>
+<body class="travado">
+
+<section class="entrada" id="entrada" aria-label="Tela de entrada">
+  <div class="feixes" aria-hidden="true"></div>
+  <canvas id="cena3d" aria-hidden="true"></canvas>
+  <div class="dupla-wrap"><div class="dupla-in"><img src="img/dupla.webp" alt="Bruno e Thiago" decoding="async"><div class="brilho" aria-hidden="true"></div></div></div>
+  <div class="faiscas" id="faiscas" aria-hidden="true"></div>
+  <div class="conteudo">
+    <p class="sobretitulo">Proposta de patrocínio</p>
+    <p class="lanc">Lançamento do DVD</p>
+    <h1 class="sf"><span class="a">SEM</span> <span class="b">FILTRO</span></h1>
+    <p class="dupla-nome">Bruno <em>&amp;</em> Thiago</p>
+    <p class="sub"><b>Sertanejo</b> · direto de Belo Horizonte<br>05 de dezembro · 21h · Autentic Lounge</p>
+    <button class="cta" id="abrir" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+      Toque para abrir
+    </button>
+    <p class="aviso">Com música · aumente o volume do aparelho</p>
+  </div>
+</section>
+
+<div class="topo" aria-hidden="true"><i id="barra"></i></div>
+<div class="contador" aria-live="polite"><b id="atual">01</b> / <span id="total">11</span></div>
+
+<button class="som" id="som" type="button" aria-pressed="false" aria-label="Ligar ou desligar a música" hidden>
+  <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z" fill="currentColor"/><path d="m17 9 5 6M22 9l-5 6"/></svg>
+  <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<!-- ============ FORMATO PC: um slide por tela ============ -->
+<main class="so-pc" id="pc">
+  <div class="quadro"><div class="slide" data-n="1"><img src="slides/s01.jpg" alt="Capa: Proposta de patrocínio do lançamento do DVD Sem Filtro, de Bruno e Thiago, sábado, 5 de dezembro, 21h, Autentic Lounge" width="1920" height="1080"></div></div>
+  <div class="quadro"><div class="slide" data-n="2"><img src="slides/s02.jpg" alt="O show: uma noite para ficar na memória. Sábado, 05/12, às 21h, no Autentic Lounge, em São Lourenço (MG)" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="3"><img src="slides/s03.jpg" alt="A dupla Bruno e Thiago: mais de 15 anos de experiência no sertanejo, segundo DVD da carreira e 37,6 mil seguidores no Instagram" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="4"><img src="slides/s04.jpg" alt="O projeto: o novo DVD Sem Filtro, o primeiro gravado com presença de público, com as primeiras faixas já no ar" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="5"><img src="slides/s05.jpg" alt="O local: Autentic Lounge, em São Lourenço (MG), com capacidade para 1.500 pessoas" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="6"><img src="slides/s06.jpg" alt="Por que estar nessa noite: um momento único, paixão nacional, experiência ao vivo e marca lembrada" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="7"><img src="slides/s07.jpg" alt="Sua marca em cada momento: divulgação antes, durante o show e repercussão depois" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="8"><img src="slides/s08.jpg" alt="Cotas de patrocínio: Ouro R$ 800,00 com 8 cortesias, Prata R$ 500,00 com 5 cortesias e Bronze R$ 300,00 com 3 cortesias" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="9"><img src="slides/s09.jpg" alt="Diferencial do plano Ouro: a dupla ao vivo na rádio local, com divulgação dos patrocinadores" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="10"><img src="slides/s10.jpg" alt="Próximos passos: escolha a cota, alinhamento da ativação e sua marca no palco em 5 de dezembro" width="1920" height="1080" loading="lazy"></div></div>
+  <div class="quadro"><div class="slide" data-n="11"><img src="slides/s11.jpg" alt="Sobre a Boreal Produções: festas e shows feitos para o Brasil inteiro, com palco, luz, som e marca trabalhando juntos" width="1920" height="1080" loading="lazy"></div></div>
+
+  <section class="fecho" id="contato">
+    <h2>Vamos fazer essa noite <em>juntos?</em></h2>
+    <p>Fale com nossa Equipe, da Boreal Produções, e escolha a cota que combina com a sua marca.</p>
+    <div class="botoes">
+      <a class="principal" data-zap="baroni" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.7 14.03c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.12.07-1.8-.11-.42-.13-.95-.31-1.64-.6-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.3.58-.37.78-.37h.56c.18 0 .43-.07.67.51.25.6.85 2.08.93 2.23.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.09 1.31 2.39 1.46.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.02.97.3.15.5.22.57.35.07.12.07.7-.17 1.38z"/></svg>WhatsApp · Baroni</a>
+      <a class="principal" data-zap="neto" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.7 14.03c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.12.07-1.8-.11-.42-.13-.95-.31-1.64-.6-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.3.58-.37.78-.37h.56c.18 0 .43-.07.67.51.25.6.85 2.08.93 2.23.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.09 1.31 2.39 1.46.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.02.97.3.15.5.22.57.35.07.12.07.7-.17 1.38z"/></svg>WhatsApp · Neto</a>
+      <a href="https://instagram.com/borealprod" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>@borealprod</a>
+    </div>
+    <ul class="contatos">
+      <li><b>Baroni</b>(21) 96799-1111</li>
+      <li><b>Neto</b>(12) 99637-9798</li>
+      <li><b>E-mail</b><a href="mailto:contato@borealproducoes.com.br?subject=Proposta%20de%20patroc%C3%ADnio%20%E2%80%93%20Bruno%20%26%20Thiago">contato@borealproducoes.com.br</a></li>
+    </ul>
+    <p class="rodape">Sem Filtro · Lançamento do DVD · 05.12 · 21h · Autentic Lounge</p>
+  </section>
+</main>
+
+<!-- ============ FORMATO CELULAR: conteúdo em coluna ============ -->
+<main class="so-cel" id="cel">
+
+  <header class="m-hero">
+    <div class="m-hero-foto"><img src="img/dupla.webp" alt="Bruno e Thiago" width="900" height="1361"></div>
+    <div class="m-hero-txt">
+      <p class="m-eyebrow">Proposta de patrocínio</p>
+      <p class="lanc">Lançamento do DVD</p>
+      <h2 class="sf"><span class="a">SEM</span> <span class="b">FILTRO</span></h2>
+      <p class="dupla-nome">Bruno <em>&amp;</em> Thiago</p>
+      <p class="m-sub">Sertanejo · direto de Belo Horizonte</p>
+      <ul class="m-chips"><li>Sábado · 05/12</li><li>21:00</li><li>Autentic Lounge</li></ul>
+    </div>
+  </header>
+
+  <section class="m-sec">
+    <p class="m-eyebrow rev">O show</p>
+    <h2 class="m-h2 rev">Uma noite para <em>ficar</em> na memória</h2>
+    <p class="m-p rev">O lançamento do DVD <b>Sem Filtro</b> reúne fãs, música ao vivo e muita energia em uma noite de celebração, e a sua marca pode fazer parte dela.</p>
+    <div class="m-tiles rev">
+      <div class="m-tile"><small>Data</small><b>05/12</b><span>Sábado</span></div>
+      <div class="m-tile"><small>Horário</small><b>21:00</b><span>Início do show</span></div>
+      <div class="m-tile"><small>Local</small><b class="mn">Autentic Lounge</b><span>São Lourenço · MG</span></div>
+      <div class="m-tile"><small>Atração</small><b class="mn">Bruno &amp; Thiago</b><span>Direto de Belo Horizonte</span></div>
+    </div>
+  </section>
+
+  <section class="m-sec">
+    <p class="m-eyebrow rev">A dupla</p>
+    <h2 class="m-dupla-nome rev">Bruno <em>&amp;</em> Thiago</h2>
+    <p class="m-sub rev" style="margin-top:10px;color:var(--ouro)">Sertanejo · direto de Belo Horizonte</p>
+    <p class="m-p rev">Naturais de Minas Gerais, Bruno e Thiago uniram suas trajetórias em 2023 e somam mais de 15 anos de experiência no sertanejo. No palco, apostam em carisma, interação e um repertório que mistura grandes sucessos com a energia de um show feito para envolver o público.</p>
+    <img class="m-dupla-img rev" src="img/m-dupla-banco.webp" alt="Bruno e Thiago, um sentado e outro em pé, de jaqueta de couro" width="800" height="1195" loading="lazy">
+    <div class="m-stats rev">
+      <div><b>+15</b><span>anos de experiência no sertanejo</span></div>
+      <div><b>2º DVD</b><span>da carreira, o 1º gravado com público</span></div>
+      <div><b>37,6 mil</b><span>seguidores no Instagram @brunoethiagoo</span></div>
+    </div>
+  </section>
+
+  <section class="m-sec">
+    <p class="m-eyebrow rev">O projeto</p>
+    <h2 class="m-h2 rev">O novo DVD <em>Sem Filtro</em></h2>
+    <figure class="m-foto rev"><img src="img/m-dvd.webp" alt="Bruno e Thiago com Pedro Netto e Matheus no DVD Sem Filtro" width="960" height="540" loading="lazy"></figure>
+    <p class="m-nota rev">Primeiro DVD: De Minas pro Goiás, gravado em Goiânia com participações de nomes do sertanejo.</p>
+    <p class="m-p rev">Segundo DVD da carreira e o <b>primeiro gravado com presença de público.</b></p>
+    <p class="m-eyebrow rev" style="margin-top:26px">Primeiras faixas já no ar</p>
+    <ol class="m-lista rev">
+      <li><span class="n">1</span><div><b>Lembranças de Amor / Sinto Falta de Você</b></div></li>
+      <li><span class="n">2</span><div><b>Pra Não Pensar em Você / Pra Mudar a Minha Vida / A Ferro e Fogo</b><span>com Pedro Netto &amp; Matheus</span></div></li>
+      <li><span class="n">3</span><div><b>Noite Maravilhosa / Eu Sou Desejo Você É Paixão</b></div></li>
+    </ol>
+    <p class="m-nota rev">Ouça agora: Spotify · Deezer · Apple Music · Amazon Music · YouTube. <a href="https://onerpm.link/SemFiltro" target="_blank" rel="noopener">onerpm.link/SemFiltro</a></p>
+  </section>
+
+  <section class="m-sec">
+    <p class="m-eyebrow rev">O local</p>
+    <h2 class="m-h2 rev">Autentic <em>Lounge</em></h2>
+    <p class="m-sub rev" style="margin-top:10px">São Lourenço · Minas Gerais</p>
+    <figure class="m-foto rev"><img src="img/m-fachada.webp" alt="Fachada do Autentic Lounge à noite, com o letreiro iluminado" width="1400" height="788" loading="lazy"></figure>
+    <div class="m-cap rev"><b>1.500</b><span>pessoas de<br>capacidade</span></div>
+    <ul class="m-tags rev"><li>Salão amplo</li><li>Área VIP</li><li>Camarote</li><li>Ambiente climatizado</li><li>Painel de LED e iluminação cênica</li></ul>
+    <p class="m-nota rev">Av. Hercília Ferreira Pessoa, 435 · São Lourenço, MG · <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Herc%C3%ADlia+Ferreira+Pessoa+435+S%C3%A3o+Louren%C3%A7o+MG" target="_blank" rel="noopener">Ver no mapa</a> · <a href="https://www.instagram.com/autentic_lounge/" target="_blank" rel="noopener">@autentic_lounge</a></p>
+  </section>
+
+  <section class="m-sec">
+    <p class="m-eyebrow rev">Por que patrocinar</p>
+    <h2 class="m-h2 rev">Por que estar nessa <em>noite?</em></h2>
+    <ol class="m-lista rev">
+      <li><span class="n">01</span><div><b>Um momento único</b><span>Primeiro DVD gravado com público: associe sua marca a um marco na carreira da dupla.</span></div></li>
+      <li><span class="n">02</span><div><b>Paixão nacional</b><span>O sertanejo é um dos gêneros mais ouvidos do Brasil, com um público fiel e apaixonado.</span></div></li>
+      <li><span class="n">03</span><div><b>Experiência ao vivo</b><span>Uma noite de alta energia numa boate: público reunido, animado e aberto a viver a sua marca.</span></div></li>
+      <li><span class="n">04</span><div><b>Marca lembrada</b><span>Exposição em vários pontos (palco, divulgação e redes sociais) antes, durante e depois do show.</span></div></li>
+    </ol>
+  </section>
+
+  <section class="m-sec">
+    <p class="m-eyebrow rev">Visibilidade</p>
+    <h2 class="m-h2 rev">Sua marca em <em>cada momento</em></h2>
+    <div class="m-fase rev"><em>Antes</em><h3>Divulgação</h3><ul><li>Logo na arte oficial do evento</li><li>Posts e stories nas redes</li><li>Material gráfico do show</li></ul></div>
+    <div class="m-fase rev"><em>Durante</em><h3>O show</h3><ul><li>Marca no palco e backdrop</li><li>Menções ao microfone</li><li>Ativação da marca no local</li></ul></div>
+    <div class="m-fase rev"><em>Depois</em><h3>Repercussão</h3><ul><li>Agradecimento da dupla</li><li>Registros do evento nas redes</li><li>Relacionamento com a marca</li></ul></div>
+  </section>
+
+  <section class="m-sec" id="m-cotas">
+    <p class="m-eyebrow rev">Cotas de patrocínio</p>
+    <h2 class="m-h2 rev">Escolha o seu lugar <em>na noite</em></h2>
+
+    <article class="m-plano ouro rev">
+      <header><div><h3>Ouro</h3><small>Cota master</small></div><div class="m-preco"><b>R$ 800,00</b><span>Investimento</span></div></header>
+      <dl>
+        <div><dt>Marca no palco / backdrop</dt><dd>Destaque principal</dd></div>
+        <div><dt>Menções ao microfone</dt><dd>Várias menções</dd></div>
+        <div><dt>Arte de divulgação do evento</dt><dd>Logo em destaque</dd></div>
+        <div><dt>Posts e stories nas redes</dt><dd>Post dedicado + stories</dd></div>
+        <div><dt>Entrevista da dupla na rádio</dt><dd>Divulgação ao vivo</dd></div>
+        <div><dt>Ativação da marca no local</dt><dd>Ação exclusiva</dd></div>
+        <div><dt>Convites cortesia</dt><dd>8 cortesias</dd></div>
+        <div><dt>Vídeo de agradecimento da dupla</dt><dd>Incluído</dd></div>
+      </dl>
+    </article>
+
+    <article class="m-plano prata rev">
+      <header><div><h3>Prata</h3><small>Cota premium</small></div><div class="m-preco"><b>R$ 500,00</b><span>Investimento</span></div></header>
+      <dl>
+        <div><dt>Marca no palco / backdrop</dt><dd>Logo</dd></div>
+        <div><dt>Menções ao microfone</dt><dd>Menções</dd></div>
+        <div><dt>Arte de divulgação do evento</dt><dd>Logo</dd></div>
+        <div><dt>Posts e stories nas redes</dt><dd>Stories</dd></div>
+        <div><dt>Entrevista da dupla na rádio</dt><dd class="nao">Não inclui</dd></div>
+        <div><dt>Ativação da marca no local</dt><dd>Ponto de presença</dd></div>
+        <div><dt>Convites cortesia</dt><dd>5 cortesias</dd></div>
+        <div><dt>Vídeo de agradecimento da dupla</dt><dd class="nao">Não inclui</dd></div>
+      </dl>
+    </article>
+
+    <article class="m-plano bronze rev">
+      <header><div><h3>Bronze</h3><small>Cota apoio</small></div><div class="m-preco"><b>R$ 300,00</b><span>Investimento</span></div></header>
+      <dl>
+        <div><dt>Marca no palco / backdrop</dt><dd class="nao">Não inclui</dd></div>
+        <div><dt>Menções ao microfone</dt><dd>Menção</dd></div>
+        <div><dt>Arte de divulgação do evento</dt><dd>Logo</dd></div>
+        <div><dt>Posts e stories nas redes</dt><dd>Citação</dd></div>
+        <div><dt>Entrevista da dupla na rádio</dt><dd class="nao">Não inclui</dd></div>
+        <div><dt>Ativação da marca no local</dt><dd class="nao">Não inclui</dd></div>
+        <div><dt>Convites cortesia</dt><dd>3 cortesias</dd></div>
+        <div><dt>Vídeo de agradecimento da dupla</dt><dd class="nao">Não inclui</dd></div>
+      </dl>
+    </article>
+
+    <p class="m-nota rev"><b style="color:var(--ouro-2);font-family:var(--cond);letter-spacing:.2em;text-transform:uppercase;font-size:13px">Permuta</b><br>Aceitamos permuta e criamos ações personalizadas para a sua marca. Vamos conversar.</p>
+  </section>
+
+  <section class="m-sec">
+    <p class="m-eyebrow rev">Diferencial do plano Ouro</p>
+    <h2 class="m-h2 rev">A dupla ao vivo na <em>rádio</em></h2>
+    <div class="m-pills rev"><span class="d">Ao vivo · Rádio local</span><span class="d">Exclusivo Ouro</span></div>
+    <p class="m-p rev">Antes do show, Bruno &amp; Thiago participam de uma <b>entrevista ao vivo na rádio local da cidade</b> para falar do DVD Sem Filtro e convidar o público para a noite de 05 de dezembro.</p>
+    <p class="m-p rev">A divulgação dos patrocinadores na entrevista é <b>exclusiva do plano Ouro.</b></p>
+    <div class="m-incl rev">
+      <div class="sim"><b>Ouro</b><span>Incluído</span></div>
+      <div><b>Prata</b><span>Não inclui</span></div>
+      <div><b>Bronze</b><span>Não inclui</span></div>
+    </div>
+    <ol class="m-lista rev">
+      <li><span class="n">01</span><div><span class="ptxt">Bate-papo ao vivo com a dupla sobre o lançamento do DVD Sem Filtro.</span></div></li>
+      <li><span class="n">02</span><div><span class="ptxt">Divulgação do show: 05/12, 21h, Autentic Lounge.</span></div></li>
+      <li><span class="n">03</span><div><span class="ptxt">Citação dos patrocinadores do plano Ouro.</span></div></li>
+    </ol>
+  </section>
+
+  <section class="m-sec">
+    <p class="m-eyebrow rev">Próximos passos</p>
+    <h2 class="m-h2 rev">Vamos fazer essa noite <em>juntos?</em></h2>
+    <ol class="m-lista rev">
+      <li><span class="n">01</span><div><span class="ptxt">Escolha a cota que combina com a sua marca.</span></div></li>
+      <li><span class="n">02</span><div><span class="ptxt">Alinhamos a ativação e os materiais.</span></div></li>
+      <li><span class="n">03</span><div><span class="ptxt">Sua marca no palco em 05 de dezembro.</span></div></li>
+    </ol>
+    <p class="m-nota rev">Conheça o projeto: <a href="https://onerpm.link/SemFiltro" target="_blank" rel="noopener">onerpm.link/SemFiltro</a> · Instagram da dupla <a href="https://www.instagram.com/brunoethiagoo/" target="_blank" rel="noopener">@brunoethiagoo</a></p>
+  </section>
+
+  <section class="m-boreal">
+    <div class="m-sec" id="m-contato">
+      <svg class="m-logo" xmlns="http://www.w3.org/2000/svg" viewBox="-13.00 -13.00 583.00 180.10" role="img" aria-label="Boreal Produções"><defs><linearGradient id="gpm" gradientUnits="userSpaceOnUse" x1="0" y1="163.1" x2="557" y2="-12"><stop offset="0" stop-color="#19f7b2"/><stop offset=".5" stop-color="#1fc8ff"/><stop offset="1" stop-color="#8a5cff"/></linearGradient></defs><g fill="url(#gpm)" fill-rule="evenodd"><path d="M2,100c-1.10457,0 -2,-0.89543 -2,-2c0,0 0,-19 0,-19v-77c0,-1.10457 0.89543,-2 2,-2h15.5c0.12482,0 0.24697,0.01143 0.36546,0.03331c0.37535,-0.02211 0.75364,-0.03331 1.13454,-0.03331h46c10.49341,0 19,8.50659 19,19v21.75c0,2.9765 -0.68444,5.79313 -1.90451,8.30112c2.45806,3.43857 3.90451,7.64981 3.90451,12.19888v17.75c0,11.59798 -9.40202,21 -21,21h-44c-0.91148,0 -1.80939,-0.05807 -2.69025,-0.17071c-0.24755,0.10974 -0.52153,0.17071 -0.80975,0.17071zM57.5,40.25c3.86599,0 7,-3.13401 7,-7v-6.75c0,-3.86599 -3.13401,-7 -7,-7h-31c-3.86599,0 -7,3.13401 -7,7v6.75c0,3.86599 3.13401,7 7,7zM58.5,80.5c4.41828,0 8,-3.58172 8,-8v-4.75c0,-4.41828 -3.58172,-8 -8,-8h-31c-4.41828,0 -8,3.58172 -8,8v4.75c0,4.41828 3.58172,8 8,8zM135,100c-19.88225,0 -36,-16.11775 -36,-36v-28c0,-19.88225 16.11775,-36 36,-36h26c19.88225,0 36,16.11775 36,36v28c0,19.88225 -16.11775,36 -36,36zM161.5,80.5c8.28427,0 15,-6.71573 15,-15v-31c0,-8.28427 -6.71573,-15 -15,-15h-27c-8.28427,0 -15,6.71573 -15,15v31c0,8.28427 6.71573,15 15,15zM211,100c-1.10457,0 -2,-0.89543 -2,-2v-96c0,-1.10457 0.89543,-2 2,-2h15.5c0.12482,0 0.24697,0.01143 0.36546,0.03331c0.37535,-0.02211 0.75364,-0.03331 1.13454,-0.03331h44c10.49341,0 19,8.50659 19,19v21.75c0,8.87364 -6.08311,16.32649 -14.30668,18.41591l20.30668,40.83409h-29l-18.27568,-40.25h-21.22432v38.25c0,1.10457 -0.89543,2 -2,2zM264.5,40.25c3.86599,0 7,-3.13401 7,-7v-6.75c0,-3.86599 -3.13401,-7 -7,-7h-29c-3.86599,0 -7,3.13401 -7,7v6.75c0,3.86599 3.13401,7 7,7zM310,57.75c0,0 0,0 0,0v-55.75c0,-1.10457 0.89543,-2 2,-2h66c1.10457,0 2,0.89543 2,2v15.5c0,1.10457 -0.89543,2 -2,2l-48.5,0v20.75h40.5c1.10457,0 2,0.89543 2,2v15.5c0,1.10457 -0.89543,2 -2,2l-40.5,0v20.75h48.5c1.10457,0 2,0.89543 2,2v15.5c0,1.10457 -0.89543,2 -2,2h-66c-1.10457,0 -2,-0.89543 -2,-2c0,0 0,-40.25 0,-40.25zM386,100l37,-100h26l37,100l-22.35543,0l-27.64457,-77.77778l-27.64457,77.77778zM426.8,60h18.4l5.58,15.5h-29.56zM491,2c0,-1.10457 0.89543,-2 2,-2h15.5c1.10457,0 2,0.89543 2,2v78.5h44.5c1.10457,0 2,0.89543 2,2v15.5c0,1.10457 -0.89543,2 -2,2h-62c-1.10457,0 -2,-0.89543 -2,-2z"/><g transform="translate(0,146)"><path d="M3 0L0 0L0-24L16.063-24Q19.578-24 21.727-23.656Q23.875-23.313 24.984-22.508Q26.094-21.703 26.484-20.336Q26.875-18.969 26.875-16.938L26.875-16.938L26.875-16.313Q26.875-14.375 26.477-13.023Q26.078-11.672 24.938-10.844Q23.797-10.016 21.641-9.633Q19.484-9.250 15.969-9.250L15.969-9.250L3-9.250L3 0ZM23.875-16.313L23.875-16.938Q23.875-18.422 23.594-19.313Q23.313-20.203 22.469-20.656Q21.625-21.109 19.953-21.258Q18.281-21.406 15.484-21.406L15.484-21.406L3-21.406L3-11.844L15.484-11.844Q18.281-11.844 19.953-12.023Q21.625-12.203 22.469-12.680Q23.313-13.156 23.594-14.039Q23.875-14.922 23.875-16.313L23.875-16.313ZM64.748 0L64.748-24L80.811-24Q84.326-24 86.475-23.688Q88.623-23.375 89.732-22.609Q90.842-21.844 91.232-20.516Q91.623-19.188 91.623-17.156L91.623-17.156L91.623-16.531Q91.623-14.656 91.178-13.305Q90.732-11.953 89.467-11.117Q88.201-10.281 85.717-9.938L85.717-9.938L90.936 0L87.936 0L82.826-9.719Q82.514-9.703 82.178-9.703Q81.842-9.703 81.482-9.703L81.482-9.703L67.748-9.703L67.748 0L64.748 0ZM67.748-21.406L67.748-12.297L81.014-12.297Q83.686-12.297 85.225-12.477Q86.764-12.656 87.490-13.109Q88.217-13.563 88.420-14.391Q88.623-15.219 88.623-16.531L88.623-16.531L88.623-17.156Q88.623-18.641 88.342-19.500Q88.061-20.359 87.217-20.766Q86.373-21.172 84.701-21.289Q83.029-21.406 80.232-21.406L80.232-21.406L67.748-21.406ZM147.402 0.500L141.105 0.500Q137.590 0.500 135.324 0.023Q133.059-0.453 131.785-1.734Q130.512-3.016 130.004-5.422Q129.496-7.828 129.496-11.688L129.496-11.688L129.496-12.313Q129.496-15.500 129.809-17.664Q130.121-19.828 130.887-21.188Q131.652-22.547 132.973-23.266Q134.293-23.984 136.293-24.242Q138.293-24.500 141.105-24.500L141.105-24.500L147.402-24.500Q150.215-24.500 152.215-24.242Q154.215-23.984 155.535-23.266Q156.855-22.547 157.621-21.188Q158.387-19.828 158.699-17.664Q159.012-15.500 159.012-12.313L159.012-12.313L159.012-11.688Q159.012-7.828 158.504-5.422Q157.996-3.016 156.723-1.734Q155.449-0.453 153.184 0.023Q150.918 0.500 147.402 0.500L147.402 0.500ZM141.105-2.094L141.105-2.094L147.402-2.094Q149.637-2.094 151.168-2.250Q152.699-2.406 153.660-2.922Q154.621-3.438 155.129-4.484Q155.637-5.531 155.824-7.281Q156.012-9.031 156.012-11.688L156.012-11.688L156.012-12.313Q156.012-15.063 155.824-16.844Q155.637-18.625 155.129-19.656Q154.621-20.688 153.660-21.164Q152.699-21.641 151.168-21.773Q149.637-21.906 147.402-21.906L147.402-21.906L141.105-21.906Q138.871-21.906 137.340-21.773Q135.809-21.641 134.848-21.164Q133.887-20.688 133.379-19.656Q132.871-18.625 132.684-16.844Q132.496-15.063 132.496-12.313L132.496-12.313L132.496-11.688Q132.496-9.031 132.684-7.281Q132.871-5.531 133.379-4.484Q133.887-3.438 134.848-2.922Q135.809-2.406 137.340-2.250Q138.871-2.094 141.105-2.094ZM214.697 0L196.885 0L196.885-24L214.697-24Q218.213-24 220.479-23.578Q222.744-23.156 224.018-21.945Q225.291-20.734 225.799-18.422Q226.307-16.109 226.307-12.313L226.307-12.313L226.307-11.688Q226.307-8.016 225.799-5.711Q225.291-3.406 224.018-2.164Q222.744-0.922 220.479-0.461Q218.213 0 214.697 0L214.697 0ZM199.885-21.406L199.885-2.594L214.697-2.594Q217.494-2.594 219.197-2.859Q220.900-3.125 221.791-4.016Q222.682-4.906 222.994-6.734Q223.307-8.563 223.307-11.688L223.307-11.688L223.307-12.313Q223.307-14.906 223.119-16.594Q222.932-18.281 222.424-19.258Q221.916-20.234 220.955-20.695Q219.994-21.156 218.463-21.281Q216.932-21.406 214.697-21.406L214.697-21.406L199.885-21.406ZM281.445 0.500L275.789 0.500Q272.273 0.500 270.008 0.023Q267.742-0.453 266.469-1.734Q265.195-3.016 264.688-5.422Q264.180-7.828 264.180-11.688L264.180-11.688L264.180-24L267.180-24L267.180-11.688Q267.180-9.031 267.367-7.281Q267.555-5.531 268.070-4.484Q268.586-3.438 269.547-2.922Q270.508-2.406 272.039-2.250Q273.570-2.094 275.789-2.094L275.789-2.094L281.445-2.094Q283.680-2.094 285.203-2.250Q286.727-2.406 287.688-2.922Q288.648-3.438 289.164-4.484Q289.680-5.531 289.867-7.281Q290.055-9.031 290.055-11.688L290.055-11.688L290.055-24L293.055-24L293.055-11.688Q293.055-7.828 292.547-5.422Q292.039-3.016 290.766-1.734Q289.492-0.453 287.227 0.023Q284.961 0.500 281.445 0.500L281.445 0.500ZM330.928-11.688L330.928-11.688L330.928-12.313Q330.928-15.500 331.240-17.664Q331.553-19.828 332.318-21.188Q333.084-22.547 334.404-23.266Q335.725-23.984 337.725-24.242Q339.725-24.500 342.537-24.500L342.537-24.500L348.834-24.500Q352.053-24.500 354.264-24.195Q356.475-23.891 357.826-22.992Q359.178-22.094 359.787-20.352Q360.396-18.609 360.396-15.734L360.396-15.734L357.396-15.734Q357.396-18 356.990-19.258Q356.584-20.516 355.623-21.078Q354.662-21.641 353.006-21.773Q351.350-21.906 348.834-21.906L348.834-21.906L342.537-21.906Q340.303-21.906 338.771-21.773Q337.240-21.641 336.279-21.164Q335.318-20.688 334.811-19.656Q334.303-18.625 334.115-16.844Q333.928-15.063 333.928-12.313L333.928-12.313L333.928-11.688Q333.928-9.031 334.115-7.281Q334.303-5.531 334.811-4.484Q335.318-3.438 336.279-2.922Q337.240-2.406 338.771-2.250Q340.303-2.094 342.537-2.094L342.537-2.094L348.834-2.094Q351.350-2.094 353.006-2.203Q354.662-2.313 355.623-2.844Q356.584-3.375 356.990-4.617Q357.396-5.859 357.396-8.109L357.396-8.109L360.396-8.109Q360.396-5.234 359.787-3.516Q359.178-1.797 357.826-0.930Q356.475-0.063 354.264 0.219Q352.053 0.500 348.834 0.500L348.834 0.500L342.537 0.500Q339.021 0.500 336.756 0.023Q334.490-0.453 333.217-1.734Q331.943-3.016 331.436-5.422Q330.928-7.828 330.928-11.688ZM343.975 8.500L343.975 8.500L343.975 6Q344.693 6 345.381 5.922Q346.068 5.844 346.521 5.563Q346.975 5.281 346.975 4.688L346.975 4.688Q346.975 3.953 346.146 3.727Q345.318 3.500 343.975 3.500L343.975 3.500L343.975-1L345.975-1L345.975 2Q347.975 2 348.975 2.680Q349.975 3.359 349.975 4.969L349.975 4.969Q349.975 6.328 349.217 7.102Q348.459 7.875 347.107 8.188Q345.756 8.500 343.975 8.500ZM416.176 0.500L409.879 0.500Q406.363 0.500 404.098 0.023Q401.832-0.453 400.559-1.734Q399.285-3.016 398.777-5.422Q398.270-7.828 398.270-11.688L398.270-11.688L398.270-12.313Q398.270-15.500 398.582-17.664Q398.895-19.828 399.660-21.188Q400.426-22.547 401.746-23.266Q403.066-23.984 405.066-24.242Q407.066-24.500 409.879-24.500L409.879-24.500L416.176-24.500Q418.988-24.500 420.988-24.242Q422.988-23.984 424.309-23.266Q425.629-22.547 426.395-21.188Q427.160-19.828 427.473-17.664Q427.785-15.500 427.785-12.313L427.785-12.313L427.785-11.688Q427.785-7.828 427.277-5.422Q426.770-3.016 425.496-1.734Q424.223-0.453 421.957 0.023Q419.691 0.500 416.176 0.500L416.176 0.500ZM409.879-2.094L409.879-2.094L416.176-2.094Q418.410-2.094 419.941-2.250Q421.473-2.406 422.434-2.922Q423.395-3.438 423.902-4.484Q424.410-5.531 424.598-7.281Q424.785-9.031 424.785-11.688L424.785-11.688L424.785-12.313Q424.785-15.063 424.598-16.844Q424.410-18.625 423.902-19.656Q423.395-20.688 422.434-21.164Q421.473-21.641 419.941-21.773Q418.410-21.906 416.176-21.906L416.176-21.906L409.879-21.906Q407.645-21.906 406.113-21.773Q404.582-21.641 403.621-21.164Q402.660-20.688 402.152-19.656Q401.645-18.625 401.457-16.844Q401.270-15.063 401.270-12.313L401.270-12.313L401.270-11.688Q401.270-9.031 401.457-7.281Q401.645-5.531 402.152-4.484Q402.660-3.438 403.621-2.922Q404.582-2.406 406.113-2.250Q407.645-2.094 409.879-2.094ZM409.035-26.969L406.035-26.969Q406.035-28.906 407.184-29.945Q408.332-30.984 410.035-30.984L410.035-30.984Q411.660-30.984 413.457-30.219L413.457-30.219Q413.973-30 414.582-29.734Q415.191-29.469 415.816-29.469L415.816-29.469Q416.566-29.469 416.801-29.758Q417.035-30.047 417.035-30.969L417.035-30.969L420.035-30.969Q420.035-28.891 418.598-27.813L418.598-27.813Q417.473-26.969 416.035-26.969L416.035-26.969Q414.395-26.969 412.613-27.719L412.613-27.719Q412.098-27.938 411.488-28.203Q410.879-28.469 410.254-28.469L410.254-28.469Q409.457-28.469 409.246-28.180Q409.035-27.891 409.035-26.969L409.035-26.969ZM489.658 0L465.658 0L465.658-24L489.221-24L489.221-21.500L468.658-21.500L468.658-13.500L488.361-13.500L488.361-11L468.658-11L468.658-2.500L489.658-2.500L489.658 0ZM554-6.938L554-6.938Q554-8.328 553.781-9.125Q553.563-9.922 552.797-10.305Q552.031-10.688 550.422-10.805Q548.813-10.922 546.016-10.969L546.016-10.969L537.328-11.094Q534.109-11.141 532.156-11.484Q530.203-11.828 529.203-12.570Q528.203-13.313 527.867-14.563Q527.531-15.813 527.531-17.688L527.531-17.688Q527.531-19.734 527.992-21.063Q528.453-22.391 529.664-23.141Q530.875-23.891 533.094-24.195Q535.313-24.500 538.828-24.500L538.828-24.500L545.516-24.500Q548.703-24.500 550.828-24.297Q552.953-24.094 554.203-23.359Q555.453-22.625 555.992-21.078Q556.531-19.531 556.531-16.828L556.531-16.828L553.531-16.828Q553.531-18.922 553.133-19.992Q552.734-21.063 551.820-21.453Q550.906-21.844 549.359-21.875Q547.813-21.906 545.516-21.906L545.516-21.906L538.984-21.906Q536.188-21.906 534.508-21.797Q532.828-21.688 531.969-21.297Q531.109-20.906 530.820-20.047Q530.531-19.188 530.531-17.688L530.531-17.688Q530.531-16.422 530.734-15.656Q530.938-14.891 531.648-14.492Q532.359-14.094 533.844-13.945Q535.328-13.797 537.891-13.766L537.891-13.766L547.203-13.641Q550.484-13.594 552.445-13.258Q554.406-12.922 555.383-12.172Q556.359-11.422 556.680-10.148Q557-8.875 557-6.938L557-6.938Q557-4.828 556.602-3.398Q556.203-1.969 555.063-1.109Q553.922-0.250 551.766 0.125Q549.609 0.500 546.094 0.500L546.094 0.500L538.781 0.500Q535.578 0.500 533.406 0.219Q531.234-0.063 529.945-0.914Q528.656-1.766 528.094-3.453Q527.531-5.141 527.531-7.953L527.531-7.953L530.531-7.953Q530.531-5.750 530.891-4.547Q531.250-3.344 532.148-2.820Q533.047-2.297 534.664-2.195Q536.281-2.094 538.781-2.094L538.781-2.094L545.938-2.094Q548.734-2.094 550.359-2.273Q551.984-2.453 552.766-2.961Q553.547-3.469 553.773-4.422Q554-5.375 554-6.938Z" stroke="url(#gpm)" stroke-width="0.55" stroke-linejoin="round" fill-rule="nonzero"/></g></g></svg>
+      <p class="m-eyebrow rev">Sobre a Boreal</p>
+      <h2 class="m-h2 rev">Festas e shows feitos para o <em>Brasil inteiro</em></h2>
+      <p class="m-p rev"><b>A Boreal Produções</b> nasce para criar noites que ninguém esquece: palco, luz, som e marca trabalhando juntos, do primeiro convite à última música. Nosso objetivo é levar festas e shows de alto nível a todo o país.</p>
+      <img class="m-bshow rev" src="img/m-boreal-show.webp" alt="Show com a marca Boreal no palco" width="1200" height="900" loading="lazy">
+      <div class="m-bfotos rev">
+        <img src="img/m-boreal-lounge.webp" alt="Lounge com a marca Boreal" width="800" height="600" loading="lazy">
+        <img src="img/m-boreal-entrada.webp" alt="Entrada de evento com a marca Boreal" width="800" height="600" loading="lazy">
+      </div>
+      <ul class="m-pilares rev">
+        <li><b>Shows</b><span>Produção com padrão profissional.</span></li>
+        <li><b>Festas</b><span>Noites pensadas do convite à pista.</span></li>
+        <li><b>Marcas</b><span>Patrocinadores perto do público certo.</span></li>
+      </ul>
+      <div class="m-contato rev">
+        <small>Fale com nossa equipe</small>
+        <h3>Boreal Produções</h3>
+        <p class="m-cp">Fale com nossa Equipe, da Boreal Produções, e escolha a cota que combina com a sua marca.</p>
+        <div class="m-pessoas">
+          <div class="m-pessoa"><b>Baroni</b><span>(21) 96799-1111</span><a class="m-btn prim" data-zap="baroni" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.7 14.03c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.12.07-1.8-.11-.42-.13-.95-.31-1.64-.6-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.3.58-.37.78-.37h.56c.18 0 .43-.07.67.51.25.6.85 2.08.93 2.23.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.09 1.31 2.39 1.46.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.02.97.3.15.5.22.57.35.07.12.07.7-.17 1.38z"/></svg>WhatsApp</a></div>
+          <div class="m-pessoa"><b>Neto</b><span>(12) 99637-9798</span><a class="m-btn prim" data-zap="neto" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.7 14.03c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.12.07-1.8-.11-.42-.13-.95-.31-1.64-.6-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.3.58-.37.78-.37h.56c.18 0 .43-.07.67.51.25.6.85 2.08.93 2.23.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.09 1.31 2.39 1.46.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.02.97.3.15.5.22.57.35.07.12.07.7-.17 1.38z"/></svg>WhatsApp</a></div>
+        </div>
+        <a class="m-btn m-ig" href="https://instagram.com/borealprod" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>@borealprod</a>
+        <ul class="m-dados">
+          <li><span>E-mail</span><button type="button" id="copiar">Copiar</button><b id="email">contato@borealproducoes.com.br</b></li>
+        </ul>
+      </div>
+      <p class="m-fim">Sem Filtro · Lançamento do DVD<br>05.12 · 21h · Autentic Lounge</p>
+    </div>
+  </section>
+</main>
+
+<a class="whats" id="whats" href="#contato" aria-label="Ir para os contatos da equipe"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.7 14.03c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.12.07-1.8-.11-.42-.13-.95-.31-1.64-.6-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.3.58-.37.78-.37h.56c.18 0 .43-.07.67.51.25.6.85 2.08.93 2.23.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.09 1.31 2.39 1.46.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.02.97.3.15.5.22.57.35.07.12.07.7-.17 1.38z"/></svg>Fale com a equipe</a>
+
+<audio id="musica" preload="auto" playsinline></audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* objetos 3D da entrada: bola de espelhos, aneis dourados, pedras flutuantes e poeira de luz */
+(function(){
+  var canvas = document.getElementById('cena3d');
+  var entrada = document.getElementById('entrada');
+  var T = window.THREE;
+  if (!T || !canvas) return;
+  var reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var renderer;
+  try { renderer = new T.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true, powerPreference: 'low-power' }); }
+  catch (e) { canvas.style.display = 'none'; return; }
+  renderer.setClearColor(0x000000, 0);
+  var cena = new T.Scene(), camera = new T.PerspectiveCamera(38, 1, 0.1, 100); camera.position.set(0, 0, 12);
+
+  // reflexos: estudio escuro com faixas de luz quente
+  var ec = document.createElement('canvas'); ec.width = 512; ec.height = 256; var g = ec.getContext('2d');
+  var grad = g.createLinearGradient(0, 0, 0, 256); grad.addColorStop(0, '#6a4c1c'); grad.addColorStop(.5, '#2a1e0d'); grad.addColorStop(1, '#4a3416'); g.fillStyle = grad; g.fillRect(0, 0, 512, 256);
+  for (var q = 0; q < 70; q++){ g.fillStyle = ['#fff6e0', '#ffe3a3', '#f3cf84', '#ffffff', '#e2a93b', '#ffd98a'][q % 6]; g.globalAlpha = .45 + (q % 5) * .13; g.fillRect((q * 83) % 500, (q * 47) % 240, 8 + (q * 13) % 34, 6 + (q * 7) % 22); }
+  g.globalAlpha = 1;
+  [[30,24,110,22,'#ffe9b8'],[200,58,70,14,'#fff6e0'],[320,18,130,26,'#f3cf84'],[450,70,50,14,'#ffffff'],[110,150,90,18,'#e2a93b'],[380,168,100,20,'#ffd98a'],[260,110,40,60,'#fff1cf']].forEach(function(r){ g.fillStyle = r[4]; g.fillRect(r[0], r[1], r[2], r[3]); });
+  var env = new T.CanvasTexture(ec); env.mapping = T.EquirectangularReflectionMapping; cena.environment = env;
+
+  cena.add(new T.AmbientLight(0xffe7bd, .35));
+  var l1 = new T.PointLight(0xffd58a, 2.4, 60); l1.position.set(-4, 4, 8); cena.add(l1);
+  var l2 = new T.PointLight(0xfff4e0, 1.4, 60); l2.position.set(5, -3, 7); cena.add(l2);
+
+  var grupo = new T.Group(); cena.add(grupo);
+  var ouro = new T.MeshStandardMaterial({ color: 0xe2a93b, metalness: 1, roughness: .2, envMapIntensity: 1.5 });
+  var ouroClaro = new T.MeshStandardMaterial({ color: 0xf3cf84, metalness: 1, roughness: .12, envMapIntensity: 1.7 });
+  var espelho = new T.MeshStandardMaterial({ color: 0xfff3d6, metalness: 1, roughness: .1, flatShading: true, envMapIntensity: 2.4 });
+
+  // bola de espelhos pendurada
+  var bola = new T.Mesh(new T.IcosahedronGeometry(1, 2), espelho); grupo.add(bola);
+  var fioGeo = new T.BufferGeometry().setFromPoints([new T.Vector3(0, 0, 0), new T.Vector3(0, 10, 0)]);
+  var fio = new T.Line(fioGeo, new T.LineBasicMaterial({ color: 0xcdb27a, transparent: true, opacity: .6 })); grupo.add(fio);
+
+  // aneis dourados
+  var an1 = new T.Mesh(new T.TorusGeometry(1, .012, 12, 160), ouroClaro), an2 = new T.Mesh(new T.TorusGeometry(1, .02, 12, 160), ouro), an3 = new T.Mesh(new T.TorusGeometry(1, .008, 12, 160), ouroClaro);
+  grupo.add(an1); grupo.add(an2); grupo.add(an3);
+
+  // pedras flutuantes
+  var pedras = [];
+  var geos = [new T.OctahedronGeometry(1, 0), new T.IcosahedronGeometry(1, 0), new T.TetrahedronGeometry(1, 0), new T.SphereGeometry(1, 24, 24)];
+  for (var i = 0; i < 9; i++){
+    var m = new T.Mesh(geos[i % geos.length], i % 3 === 0 ? ouroClaro : (i % 3 === 1 ? ouro : espelho));
+    m.userData = { fase: Math.random() * 6.28, vel: .5 + Math.random() * .8, giro: (Math.random() - .5) * 1.2 };
+    pedras.push(m); grupo.add(m);
+  }
+
+  // poeira de luz
+  var N = 140, pos = new Float32Array(N * 3), vel = [];
+  for (var k = 0; k < N; k++){ pos[k*3] = (Math.random() - .5) * 18; pos[k*3+1] = (Math.random() - .5) * 11; pos[k*3+2] = -2 + Math.random() * 6; vel.push(.15 + Math.random() * .35); }
+  var pgeo = new T.BufferGeometry(); pgeo.setAttribute('position', new T.BufferAttribute(pos, 3));
+  var sc = document.createElement('canvas'); sc.width = sc.height = 64; var sg = sc.getContext('2d'), rg = sg.createRadialGradient(32, 32, 0, 32, 32, 32);
+  rg.addColorStop(0, 'rgba(255,246,220,1)'); rg.addColorStop(.35, 'rgba(243,207,132,.55)'); rg.addColorStop(1, 'rgba(243,207,132,0)'); sg.fillStyle = rg; sg.fillRect(0, 0, 64, 64);
+  var poeira = new T.Points(pgeo, new T.PointsMaterial({ map: new T.CanvasTexture(sc), size: .28, transparent: true, depthWrite: false, blending: T.AdditiveBlending, opacity: .85 }));
+  cena.add(poeira);
+
+  function altura(z){ return 2 * Math.tan(camera.fov * Math.PI / 360) * (camera.position.z - z); }
+  function mundo(nx, ny, z){
+    var v = new T.Vector3(nx * 2 - 1, -(ny * 2 - 1), .5).unproject(camera), d = v.sub(camera.position).normalize();
+    return camera.position.clone().add(d.multiplyScalar((z - camera.position.z) / d.z));
+  }
+  var retrato = false;
+  function posicionar(){
+    var w = canvas.clientWidth || 1, h = canvas.clientHeight || 1, dpr = Math.min(window.devicePixelRatio || 1, 1.75);
+    renderer.setPixelRatio(dpr); renderer.setSize(w, h, false);
+    camera.aspect = w / h; camera.updateProjectionMatrix(); camera.updateMatrixWorld(true);
+    retrato = h > w || w < 760;
+    var base = retrato ? Math.min(altura(0) * (w / h), altura(0)) : altura(0);   // referencia de tamanho no plano z = 0
+    var cfg = retrato
+      ? { bola: [.13, .3, .21], an: [.52, .38, .82], pedras: [[.9,.1],[.08,.48],[.93,.42],[.12,.62],[.86,.6],[.5,.06],[.2,.34],[.78,.26],[.6,.5]] }
+      : { bola: [.56, .27, .2], an: [.77, .52, .86], pedras: [[.52,.1],[.48,.62],[.95,.14],[.58,.86],[.93,.88],[.4,.36],[.66,.06],[.99,.55],[.5,.48]] };
+    var pb = mundo(cfg.bola[0], cfg.bola[1], 0); bola.position.copy(pb); var rb = base * cfg.bola[2] * .5; bola.scale.setScalar(rb);
+    var topo = mundo(cfg.bola[0], -0.1, 0); fio.position.set(pb.x, pb.y + rb * .98, 0); fio.scale.set(1, (topo.y - (pb.y + rb)) / 10 + .02, 1);
+    var pa = mundo(cfg.an[0], cfg.an[1], -1.5), ra = base * cfg.an[2] * .5;
+    [an1, an2, an3].forEach(function(a, i){ a.position.copy(pa); a.scale.setScalar(ra * (1 - i * .13)); });
+    pedras.forEach(function(p, i){
+      var q = cfg.pedras[i], pp = mundo(q[0], q[1], -1 + (i % 4) * .8); p.position.copy(pp); p.userData.base = pp.clone();
+      p.scale.setScalar(base * (.012 + (i % 4) * .006));
+    });
+    if (reduzir) renderer.render(cena, camera);
+  }
+  var alvoX = 0, alvoY = 0;
+  window.addEventListener('pointermove', function(e){ alvoX = e.clientX / window.innerWidth - .5; alvoY = e.clientY / window.innerHeight - .5; entrada.style.setProperty('--px', alvoX.toFixed(3)); entrada.style.setProperty('--py', alvoY.toFixed(3)); }, { passive: true });
+  window.addEventListener('resize', posicionar);
+
+  var rodando = false, ultimo = 0, t0 = 0;
+  function quadro(agora){
+    if (!rodando) return;
+    var dt = Math.min(.05, (agora - ultimo) / 1000); ultimo = agora; t0 += dt;
+    var auto = retrato ? Math.sin(t0 * .4) * .25 : 0;
+    grupo.rotation.y += ((alvoX * .5 + auto) - grupo.rotation.y) * .05;
+    grupo.rotation.x += ((alvoY * .25) - grupo.rotation.x) * .05;
+    bola.rotation.y += dt * .45; bola.rotation.x = Math.sin(t0 * .5) * .06;
+    an1.rotation.set(1.15, t0 * .25, .3); an2.rotation.set(1.45 + Math.sin(t0 * .3) * .15, -t0 * .18, -.5); an3.rotation.set(.85, t0 * .32, .9);
+    pedras.forEach(function(p){ var u = p.userData; p.rotation.x += dt * u.giro; p.rotation.y += dt * u.giro * 1.3; p.position.y = u.base.y + Math.sin(t0 * u.vel + u.fase) * .35; });
+    var a = pgeo.attributes.position.array;
+    for (var j = 0; j < N; j++){ a[j*3+1] += vel[j] * dt; if (a[j*3+1] > 5.8) a[j*3+1] = -5.8; }
+    pgeo.attributes.position.needsUpdate = true;
+    renderer.render(cena, camera);
+    requestAnimationFrame(quadro);
+  }
+  function iniciar(){ if (reduzir || rodando) return; rodando = true; ultimo = performance.now(); requestAnimationFrame(quadro); }
+  function parar(){ rodando = false; }
+  document.addEventListener('visibilitychange', function(){ if (document.hidden) parar(); else if (!entrada.hidden && !entrada.classList.contains('saindo')) iniciar(); });
+  window.cena3d = { iniciar: iniciar, parar: parar };
+  posicionar(); iniciar();
+})();
+</script>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  document.documentElement.classList.toggle('http', /^https?:/.test(location.protocol));
+  document.body.classList.toggle('http', /^https?:/.test(location.protocol));
+  var audio = $('musica'), entrada = $('entrada'), btnSom = $('som');
+  var cel = window.matchMedia('(max-width: 860px), (orientation: portrait) and (max-width: 1100px)');
+  var quadros = [].slice.call(document.querySelectorAll('.slide'));
+  var total = quadros.length, atual = 1, aberto = false, querTocar = false, desligadoPeloUsuario = false;
+
+  /* musicas: coloque os arquivos em audio/ e liste aqui; tocam em sequencia e em ciclo */
+  var faixas = [], faixa = 0;
+  if (faixas.length){ audio.src = faixas[0]; btnSom.hidden = false; }
+
+  var contatos = { baroni: { n: '5521967991111', nome: 'Baroni' }, neto: { n: '5512996379798', nome: 'Neto' } };
+  [].forEach.call(document.querySelectorAll('[data-zap]'), function(a){
+    var c = contatos[a.getAttribute('data-zap')];
+    a.href = 'https://wa.me/' + c.n + '?text=' + encodeURIComponent('Olá, ' + c.nome + '! Vi a proposta de patrocínio do lançamento do DVD Sem Filtro, de Bruno & Thiago (05/12, Autentic Lounge), e gostaria de saber mais.');
+  });
+  $('whats').addEventListener('click', function(e){ e.preventDefault(); $(cel.matches ? 'm-contato' : 'contato').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+  $('total').textContent = pad(total);
+
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  function mostrarSom(tocando){
+    btnSom.classList.toggle('tocando', tocando);
+    btnSom.setAttribute('aria-pressed', tocando ? 'true' : 'false');
+    btnSom.setAttribute('aria-label', tocando ? 'Desligar a música' : 'Ligar a música');
+  }
+  function tocar(){
+    if (!faixas.length) return;
+    var p = audio.play();
+    if (p && p.then) p.then(function(){ mostrarSom(true); }, function(){ mostrarSom(false); });
+    else mostrarSom(!audio.paused);
+  }
+  audio.addEventListener('ended', function(){
+    if (!faixas.length) return;
+    faixa = (faixa + 1) % faixas.length;
+    audio.src = faixas[faixa];
+    tocar();
+  });
+  function abrir(){
+    if (aberto) return; aberto = true;
+    querTocar = true; tocar();                       // o play() precisa acontecer dentro do toque
+    if (faixas.length > 1){ var aquecer = new Audio(); aquecer.preload = 'auto'; aquecer.src = faixas[1]; }
+    document.body.classList.remove('travado');
+    entrada.classList.add('saindo');
+    setTimeout(function(){ entrada.hidden = true; if (window.cena3d) window.cena3d.parar(); }, 950);
+    window.scrollTo(0, 0); agendar();
+  }
+  entrada.addEventListener('click', abrir);
+  entrada.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrir(); } });
+
+  btnSom.addEventListener('click', function(){
+    if (audio.paused){ desligadoPeloUsuario = false; querTocar = true; tocar(); }
+    else { desligadoPeloUsuario = true; querTocar = false; audio.pause(); mostrarSom(false); }
+  });
+  document.addEventListener('visibilitychange', function(){
+    if (document.hidden){ if (!audio.paused) audio.pause(); }
+    else if (querTocar && !desligadoPeloUsuario && aberto) tocar();
+  });
+
+  /* faiscas da entrada */
+  var fa = $('faiscas');
+  for (var i = 0; i < 18; i++){
+    var s = document.createElement('i'); s.style.left = (Math.random() * 100) + '%';
+    s.style.animationDuration = (6 + Math.random() * 7) + 's'; s.style.animationDelay = (-Math.random() * 10) + 's';
+    s.style.setProperty('--dx', ((Math.random() - .5) * 90) + 'px'); s.style.transform = 'scale(' + (.6 + Math.random() * 1.1) + ')';
+    fa.appendChild(s);
+  }
+
+  /* aparecer ao rolar (só o que está abaixo da primeira tela) */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target); } });
+  }, { threshold: .1 });
+  [].forEach.call(document.querySelectorAll('.slide, .rev'), function(el){
+    if (el.offsetParent !== null && el.getBoundingClientRect().top > window.innerHeight) el.classList.add('pre');
+    io.observe(el);
+  });
+
+  /* progresso, contador e botão de contato */
+  var medindo = false;
+  function medir(){
+    medindo = false;
+    var h = window.innerHeight, mostra = false;
+    if (cel.matches){
+      var max = document.documentElement.scrollHeight - h;
+      $('barra').style.width = (max > 0 ? Math.min(100, window.scrollY / max * 100) : 0) + '%';
+      var a = $('m-cotas').getBoundingClientRect().top, b = $('m-contato').getBoundingClientRect().top;
+      mostra = aberto && a < h * .5 && b > h * .9;
+    } else {
+      var meio = h / 2, melhor = 0, dist = Infinity;
+      quadros.forEach(function(q, i){ var r = q.getBoundingClientRect(), d = Math.abs(r.top + r.height / 2 - meio); if (d < dist){ dist = d; melhor = i; } });
+      var noFecho = $('contato').getBoundingClientRect().top < h * .6;
+      atual = noFecho ? total : melhor + 1;
+      $('atual').textContent = pad(atual); $('barra').style.width = (atual / total * 100) + '%';
+      mostra = aberto && atual >= 8 && !noFecho;
+    }
+    $('whats').classList.toggle('mostra', mostra);
+  }
+  function agendar(){ if (!medindo){ medindo = true; requestAnimationFrame(medir); } }
+  window.addEventListener('scroll', agendar, { passive: true });
+  window.addEventListener('resize', agendar);
+
+  /* copiar e-mail */
+  $('copiar').addEventListener('click', function(){
+    var b = this, el = $('email');
+    function ok(){ b.textContent = 'Copiado'; setTimeout(function(){ b.textContent = 'Copiar'; }, 2000); }
+    function selecionar(){ var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selecionado'; }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(el.textContent).then(ok, selecionar); else selecionar();
+  });
+
+  /* teclado no PC */
+  document.addEventListener('keydown', function(e){
+    if (!aberto || cel.matches) return;
+    function irPara(i){ if (i < 0) i = 0; if (i >= total){ $('contato').scrollIntoView({ behavior: 'smooth' }); return; } quadros[i].scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === 'ArrowRight'){ e.preventDefault(); irPara(atual); }
+    if (e.key === 'ArrowUp' || e.key === 'PageUp' || e.key === 'ArrowLeft'){ e.preventDefault(); irPara(atual - 2); }
+  });
+})();
+</script>
+</body>
+</html>
